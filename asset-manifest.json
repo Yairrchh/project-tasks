@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/project-tasks/static/css/main.130fa485.css",
+    "main.js": "/project-tasks/static/js/main.df7235c2.js",
+    "index.html": "/project-tasks/index.html",
+    "static/media/delete.svg": "/project-tasks/static/media/delete.7018c4465589031bd51c8efbe21df9ca.svg",
+    "static/media/check.svg": "/project-tasks/static/media/check.e9a948bba52a34123d2ed7aeda0ea495.svg",
+    "main.130fa485.css.map": "/project-tasks/static/css/main.130fa485.css.map",
+    "main.df7235c2.js.map": "/project-tasks/static/js/main.df7235c2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.130fa485.css",
+    "static/js/main.df7235c2.js"
+  ]
+}
