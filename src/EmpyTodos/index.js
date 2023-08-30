@@ -3,7 +3,7 @@ import './EmpyTodos.css'
 
 function EmpyTodos() {
     return(
-        <p>Crea tu primer Todo</p>
+        <p className='empy-todo'>Create your first task</p>
     )
 }
 
