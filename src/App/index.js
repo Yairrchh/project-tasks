@@ -11,7 +11,7 @@ import {TodosError} from '../TodosError';
 import {EmpyTodos} from '../EmpyTodos';
 import { Modal } from '../Modal';
 import {TodoForm} from '../TodoForm';
-import { ChangeAlertWithStorageListener } from '../ChangeAlert';
+import { ChangeAlert } from '../ChangeAlert';
 
 function App() {
 
@@ -111,7 +111,7 @@ return (
       </Modal>
   )}
 
-    <ChangeAlertWithStorageListener sincronizeTodos={sincronizeTodos}/>
+    <ChangeAlert sincronizeTodos={sincronizeTodos}/>
   </>
 );
 
