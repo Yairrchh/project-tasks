@@ -1,0 +1,5 @@
+.div {
+    background-image: url('./not-found.png');
+    background-size: cover;
+    height: 100vh;
+}
