@@ -1,19 +1,18 @@
 import React from "react";
 import './TodoForm.css'
+import { useNavigate } from "react-router-dom";
 
-function TodoForm({addTodo,setOpenModal}) {
+function TodoForm(props) {
+    const navigate = useNavigate();
 
     const onSubmit = (event) => {
     event.preventDefault();
-    addTodo(newTodoValue)
-    setOpenModal(false);
+    props.submitEvent(newTodoValue)
+    navigate('/')
 };
 
-    const onCancel = () => {
-        setOpenModal(false)
-    };
 
-    const [newTodoValue, setNewTodoValue] = React.useState('');
+    const [newTodoValue, setNewTodoValue] = React.useState(props.defaultTodoText || '');
 
     const onChange = (event) => {
         setNewTodoValue(event.target.value)
@@ -21,9 +20,9 @@ function TodoForm({addTodo,setOpenModal}) {
 
     return (
         <form onSubmit={onSubmit}>
-            <label>Escribe tu nueva tarea</label>
+            <label>{props.label}</label>
             <textarea
-            placeholder="Hacer la tarea"
+            placeholder="escribe un todo"
             value={newTodoValue}
             onChange={onChange}
             />
@@ -31,13 +30,13 @@ function TodoForm({addTodo,setOpenModal}) {
                 <button
                 className="TodoForm-button TodoForm-button--cancel"
                 type="button"
-                onClick={onCancel}
+                onClick={() => navigate('/')}
                 >Cancelar
                 </button>
                 <button
                 type="sudmit"
                 className="TodoForm-button TodoForm-button--add"
-                >Añadir
+                >{props.submitText}
                 </button>
 
             </div>

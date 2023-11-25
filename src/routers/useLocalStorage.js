@@ -33,7 +33,7 @@ const onSincronize = () => {dispatch({type: actionTypes.sincronize})}
             } catch(error) {
                 onError(error)
             }
-        }, 2000);
+        }, 3000);
     }, [sincronizedItem]);
 
 
